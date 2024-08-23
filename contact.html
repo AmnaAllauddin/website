@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left_nav">
+        <h1>LOGO</h1>
+      </div>
+      <div class="right_nav">
+         
+          <ul>
+            <li><a href="./index.html"><div title="Home"></div></a></li>
+            <li><a href="./product/product.html"> <div title="Product"></div></a></li>
+            <li><a href="./contact.html"> <div title="Contact"></div></a></li>
+          </ul>
+        
+        <div id="nav_button">
+          <button id="login"><a href="./form.html">Login</a></button>
+          <button id="logout" onclick="logout_fun()">
+            <a href="./form.html">logout</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="contact_form">
+      <h1>Contact us</h1>
+      <form action="">
+        <div class="name">
+          <label for="">Name</label>
+          <input type="text" name="" id="name" />
+        </div>
+        <div class="email">
+            <label for="">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="message">
+            <label for="">Message</label>
+            <textarea> </textarea>
+        </div>
+        <button id="contact_button">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <h4>All rights are reserved</h4>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

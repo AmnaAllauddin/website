@@ -1,0 +1,132 @@
+body{
+    background:none;
+}
+#container1 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     padding: 4rem;
+}
+
+.box{
+    margin: 2%;
+    border: 1px solid #ddd;
+    width:calc(31% - 3%); 
+    height:450px;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #ddd;
+    box-sizing: border-box; 
+}
+.box:hover{
+    box-shadow: 2px 2px 4px 10px rgba(5, 0, 0, 0.671);
+
+} 
+
+.box h1{
+    font-size: 16px;
+    margin: 8px 0;
+    color: black;
+}
+.box h2{
+    font-size: 25px;
+    margin: 8px 0;
+    color: black;
+}
+.box p{
+    font-size: 16px;
+    text-align: justify;
+    color: #302d2d;
+}
+
+ .box img {
+    max-width: 40%;
+    height:auto;
+    border-radius: 4px;
+    mix-blend-mode: multiply;
+    background: none;
+    margin-top: 4%;
+
+}
+.box button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    width:8rem ;
+    padding: 1rem;
+    color:whitesmoke;
+    background: black;
+} 
+.box button:hover{
+width: 10rem;
+background: none;
+color: black;
+}
+/* Tablets */
+@media (max-width: 768px) {
+    #container1 {
+        padding: 2rem;
+    }
+
+    .box {
+        width: calc(45% - 4%);
+        height: auto;
+    }
+
+    .box h1, .box p {
+        font-size: 14px;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    .box img {
+        max-width: 50%;
+    }
+
+    .box button {
+        width: 7rem;
+    }
+
+    .box button:hover {
+        width: 8.5rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    #container1 {
+        padding: 1rem;
+    }
+
+    .box {
+        width: calc(100% - 4%);
+        height: auto;
+    }
+
+    .box h1, .box p {
+        font-size: 12px;
+    }
+
+    .box h2 {
+        font-size: 20px;
+    }
+
+    .box img {
+        max-width: 60%;
+    }
+
+    .box button {
+        width: 6rem;
+        padding: 0.8rem;
+    }
+
+    .box button:hover {
+        width: 7.5rem;
+    }
+}
